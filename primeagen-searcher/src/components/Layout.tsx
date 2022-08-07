@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { styled } from "@stitches/react";
+import { styled } from "gatsby-theme-stitches/src/config";
 import "../styles/layout.css";
 
 interface LayoutProps {
@@ -20,7 +20,7 @@ const Layout = ({ children }: LayoutProps) => {
 };
 
 const MainLayout = styled("main", {
-  backgroundColor: "#edf0f2",
+  backgroundColor: "$background",
 });
 
 export default Layout;

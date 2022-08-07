@@ -1,5 +1,5 @@
 import React from "react";
-import { styled } from "@stitches/react";
+import { styled } from "gatsby-theme-stitches/src/config";
 import { IProgrammer } from "../../types/programmer";
 import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
 
@@ -26,7 +26,7 @@ const CardContainer = styled("div", {
   display: "flex",
   flexDirection: "column",
   textAlign: "center",
-  backgroundColor: "#fefefe",
+  backgroundColor: "$blue",
 });
 
 export default Card;
