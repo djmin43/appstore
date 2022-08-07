@@ -1,13 +1,25 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { IProgrammer } from "../types/programmer";
+import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
 
 interface ProgrammerPageProps {
-  data: IProgrammer;
+  data: {
+    contentfulPage: IProgrammer;
+  };
 }
 
-const ProgrammerPage = ({ data }: ProgrammerPageProps) => {
-  return <div>hello world</div>;
+const ProgrammerPage = ({
+  data: { contentfulPage: programmerDetail },
+}: ProgrammerPageProps) => {
+  const image = getImage(programmerDetail.image) as IGatsbyImageData;
+  console.log(image);
+
+  return (
+    <div>
+      <GatsbyImage alt={programmerDetail.name} image={image} />
+    </div>
+  );
 };
 
 export const query = graphql`
@@ -20,7 +32,7 @@ export const query = graphql`
       mainLanguage
       description
       image {
-        gatsbyImage(width: 200)
+        gatsbyImage(width: 400, height: 400)
       }
     }
   }
