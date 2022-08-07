@@ -11,8 +11,8 @@ const IndexPage = () => {
     <Layout>
       <ProgrammerWrapper>
         {programmersList.map((programmer) => (
-          <Link to={`/${programmer.url}`}>
-            <Card key={programmer.id} programmerData={programmer} />
+          <Link key={programmer.id} to={`/${programmer.id}`}>
+            <Card programmerData={programmer} />
           </Link>
         ))}
       </ProgrammerWrapper>
