@@ -36,6 +36,7 @@ export const {
     fontSizes: {
       verySmall: fontSize.verySmall,
       small: fontSize.small,
+      semiMedium: fontSize.semiMedium,
       medium: fontSize.medium,
       large: fontSize.large,
       veryLarge: fontSize.veryLarge,

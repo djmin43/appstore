@@ -22,6 +22,7 @@ export const colors = {
 export const fontSize = {
   verySmall: "0.5rem",
   small: "1rem",
+  semiMedium: "1.5rem",
   medium: "2rem",
   large: "3rem",
   veryLarge: "4rem",

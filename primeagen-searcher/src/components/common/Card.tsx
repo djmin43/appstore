@@ -13,9 +13,9 @@ const Card = ({ programmerData }: CardProps) => {
   return (
     <CardContainer>
       <GatsbyImage alt={programmerData.name} image={image} />
-      <h1>{programmerData.name}</h1>
-      <p>{programmerData.description}</p>
-      <p>{programmerData.mainLanguage}</p>
+      <ProgrammerName>
+        <h3>{programmerData.name}</h3>
+      </ProgrammerName>
     </CardContainer>
   );
 };
@@ -27,6 +27,17 @@ const CardContainer = styled("div", {
   flexDirection: "column",
   textAlign: "center",
   backgroundColor: "$primaryWhite",
+});
+
+const ProgrammerName = styled("div", {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "5rem",
+  "&>h3": {
+    fontSize: "$semiMedium",
+    fontWeight: "$semiBold",
+  },
 });
 
 export default Card;

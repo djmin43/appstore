@@ -21,6 +21,7 @@ const ProgrammerWrapper = styled("div", {
   display: "flex",
   flexWrap: "wrap",
   justifyContent: "center",
+  margin: "2rem",
 });
 
 export default IndexPage;
