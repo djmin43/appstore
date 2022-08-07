@@ -7,7 +7,7 @@ interface CardProps {
   programmerData: IProgrammer;
 }
 
-const Card = ({ programmerData }: CardProps) => {
+const SmallCard = ({ programmerData }: CardProps) => {
   const image = getImage(programmerData.image) as IGatsbyImageData;
 
   return (
@@ -40,4 +40,4 @@ const ProgrammerName = styled("div", {
   },
 });
 
-export default Card;
+export default SmallCard;

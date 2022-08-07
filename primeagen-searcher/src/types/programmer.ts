@@ -6,5 +6,6 @@ export interface IProgrammer {
   name: string;
   description?: string;
   mainLanguage?: string;
+  link?: string;
   image: IGatsbyImageData | null;
 }

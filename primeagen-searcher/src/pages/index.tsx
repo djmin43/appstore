@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout/Layout";
 import { useProgrammerListQuery } from "../hooks/useProgrammerListQuery";
-import Card from "../components/common/Card";
+import SmallCard from "../components/common/SmallCard";
 import { styled } from "@stitches/react";
 import { Link } from "gatsby";
 
@@ -12,7 +12,7 @@ const IndexPage = () => {
       <ProgrammerWrapper>
         {programmersList.map((programmer) => (
           <Link key={programmer.id} to={`/${programmer.id}`}>
-            <Card programmerData={programmer} />
+            <SmallCard programmerData={programmer} />
           </Link>
         ))}
       </ProgrammerWrapper>
