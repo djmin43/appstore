@@ -1,12 +1,12 @@
 import * as React from "react";
 import Layout from "../components/layout/Layout";
-import { useProgrammerList } from "../hooks/useProgrammerList";
+import { useProgrammerListQuery } from "../hooks/useProgrammerListQuery";
 import Card from "../components/common/Card";
 import { styled } from "@stitches/react";
 import { Link } from "gatsby";
 
 const IndexPage = () => {
-  const programmersList = useProgrammerList();
+  const programmersList = useProgrammerListQuery();
   return (
     <Layout>
       <ProgrammerWrapper>

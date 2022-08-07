@@ -1,11 +1,11 @@
 import { graphql, useStaticQuery } from "gatsby";
 import { IProgrammer } from "../types/programmer";
 
-export const useProgrammerList = (): IProgrammer[] => {
+export const useProgrammerListQuery = (): IProgrammer[] => {
   const {
     allContentfulPage: { nodes },
   } = useStaticQuery(graphql`
-    query MyQuery {
+    query ProgrammerListQuery {
       allContentfulPage {
         nodes {
           id
