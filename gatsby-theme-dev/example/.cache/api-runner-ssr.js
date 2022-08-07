@@ -1,6 +1,6 @@
 var plugins = [{
       name: 'partytown',
-      plugin: require('/Users/dongjoonmin/Desktop/dev/react-playground/gatsby-theme-dev/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
+      plugin: require('/Users/dongjoonmin/Desktop/dev/gatsby-playground/gatsby-theme-dev/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},
     }]
 /* global plugins */

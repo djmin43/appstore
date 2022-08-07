@@ -1,3 +1,3 @@
 module.exports = {
-    plugins: ["gatsby-theme-example-workspaces"],
-}
+  plugins: ["@djmin43/gatsby-theme-example-workspaces"],
+};

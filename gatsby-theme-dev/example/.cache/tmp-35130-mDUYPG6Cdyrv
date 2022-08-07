@@ -1,0 +1,5 @@
+
+    const cmd = require("/Users/dongjoonmin/Desktop/dev/gatsby-playground/gatsby-theme-dev/node_modules/gatsby/dist/commands/develop-process.js");
+    const args = {"_":["develop"],"verbose":false,"no-color":false,"no-colors":false,"noColors":false,"noColor":false,"json":false,"H":"localhost","host":"localhost","p":"8000","port":8000,"c":"","cert-file":"","certFile":"","k":"","key-file":"","keyFile":"","ca-file":"","caFile":"","graphql-tracing":false,"graphqlTracing":false,"$0":"gatsby","directory":"/Users/dongjoonmin/Desktop/dev/gatsby-playground/gatsby-theme-dev/example","browserslist":[">0.25%","not dead"],"sitePackageJson":{"name":"example","version":"1.0.0","main":"index.js","license":"MIT","scripts":{"develop":"gatsby develop","build":"gatsby build"},"dependencies":{"gatsby":"^4.20.0","@djmin43/gatsby-theme-example-workspaces":"1.0.0","react":"^18.2.0","react-dom":"^18.2.0"}},"report":{"errorMap":{}},"useYarn":false,"proxyPort":8000,"debugInfo":null};
+    cmd(args);
+  

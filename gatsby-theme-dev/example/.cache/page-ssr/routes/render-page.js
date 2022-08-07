@@ -4854,24 +4854,24 @@ if (false) {} else {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!********************************************************************************************************************!*\
-  !*** external "/Users/dongjoonmin/Desktop/dev/react-playground/gatsby-theme-dev/node_modules/react-dom/server.js" ***!
-  \********************************************************************************************************************/
+/*!*********************************************************************************************************************!*\
+  !*** external "/Users/dongjoonmin/Desktop/dev/gatsby-playground/gatsby-theme-dev/node_modules/react-dom/server.js" ***!
+  \*********************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/dongjoonmin/Desktop/dev/react-playground/gatsby-theme-dev/node_modules/react-dom/server.js");
+module.exports = require("/Users/dongjoonmin/Desktop/dev/gatsby-playground/gatsby-theme-dev/node_modules/react-dom/server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!***************************************************************************************************************!*\
-  !*** external "/Users/dongjoonmin/Desktop/dev/react-playground/gatsby-theme-dev/node_modules/react/index.js" ***!
-  \***************************************************************************************************************/
+/*!****************************************************************************************************************!*\
+  !*** external "/Users/dongjoonmin/Desktop/dev/gatsby-playground/gatsby-theme-dev/node_modules/react/index.js" ***!
+  \****************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/dongjoonmin/Desktop/dev/react-playground/gatsby-theme-dev/node_modules/react/index.js");
+module.exports = require("/Users/dongjoonmin/Desktop/dev/gatsby-playground/gatsby-theme-dev/node_modules/react/index.js");
 
 /***/ }),
 
