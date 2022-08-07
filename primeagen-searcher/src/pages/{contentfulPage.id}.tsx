@@ -7,7 +7,6 @@ interface ProgrammerPageProps {
 }
 
 const ProgrammerPage = ({ data }: ProgrammerPageProps) => {
-  console.log(data);
   return <div>hello world</div>;
 };
 

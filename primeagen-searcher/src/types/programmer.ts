@@ -2,9 +2,9 @@ import { IGatsbyImageData } from "gatsby-plugin-image";
 
 export interface IProgrammer {
   id: string;
-  url: string;
+  url?: string;
   name: string;
-  description: string;
-  mainLanguage: string;
+  description?: string;
+  mainLanguage?: string;
   image: IGatsbyImageData | null;
 }

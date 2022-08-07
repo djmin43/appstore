@@ -10,9 +10,6 @@ export const useProgrammerListQuery = (): IProgrammer[] => {
         nodes {
           id
           name
-          url
-          description
-          mainLanguage
           image {
             gatsbyImage(width: 200, height: 200)
           }
