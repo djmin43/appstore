@@ -14,6 +14,7 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+    "@djmin43/gatsby-theme-example-workspaces",
     {
       resolve: "gatsby-source-contentful",
       options: {
@@ -21,36 +22,35 @@ const config: GatsbyConfig = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
       },
     },
-    "gatsby-plugin-image",
-    "gatsby-plugin-sitemap",
-    "@djmin43/gatsby-theme-example-workspaces",
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaults: {
-          formats: [`auto`, `webp`],
-          placeholder: `dominantColor`,
-          quality: 50,
-          breakpoints: [750, 1080, 1366, 1920],
-          backgroundColor: `transparent`,
-          tracedSVGOptions: {},
-          blurredOptions: {},
-          jpgOptions: {},
-          pngOptions: {},
-          webpOptions: {},
-          avifOptions: {},
-        },
-      },
-    },
-    "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
-    },
+    // "gatsby-plugin-image",
+    // "gatsby-plugin-sitemap",
+    // {
+    //   resolve: `gatsby-plugin-sharp`,
+    //   options: {
+    //     defaults: {
+    //       formats: [`auto`, `webp`],
+    //       placeholder: `dominantColor`,
+    //       quality: 50,
+    //       breakpoints: [750, 1080, 1366, 1920],
+    //       backgroundColor: `transparent`,
+    //       tracedSVGOptions: {},
+    //       blurredOptions: {},
+    //       jpgOptions: {},
+    //       pngOptions: {},
+    //       webpOptions: {},
+    //       avifOptions: {},
+    //     },
+    //   },
+    // },
+    // "gatsby-transformer-sharp",
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "images",
+    //     path: "./src/images/",
+    //   },
+    //   __key: "images",
+    // },
   ],
 };
 
