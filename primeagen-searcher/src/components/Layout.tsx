@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { styled } from "@stitches/react";
+import "../styles/layout.css";
 
 interface LayoutProps {
   children: ReactNode;
