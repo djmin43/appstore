@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import { styled } from "gatsby-theme-stitches/src/config";
-import "../styles/layout.css";
+import "../../styles/layout.css";
+import Navbar from "./Navbar";
 
 interface LayoutProps {
   children: ReactNode;
@@ -9,11 +10,8 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <MainLayout>
-      <header>header</header>
-      <nav>navbar</nav>
-
+      <Navbar />
       {children}
-
       <footer>this is footer</footer>
     </MainLayout>
   );

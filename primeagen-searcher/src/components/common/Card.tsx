@@ -23,10 +23,10 @@ const Card = ({ programmerData }: CardProps) => {
 const CardContainer = styled("div", {
   padding: "1rem",
   margin: "0.25rem",
-  display: "flex",
+  width: "15rem",
   flexDirection: "column",
   textAlign: "center",
-  backgroundColor: "$blue",
+  backgroundColor: "$primaryWhite",
 });
 
 export default Card;

@@ -1,5 +1,5 @@
 import { createStitches } from "@stitches/react";
-import { colors, fontWeight } from "../styles/palette";
+import { colors, fontSize, fontWeight } from "../styles/palette";
 
 // You should exports all properties
 export const {
@@ -16,10 +16,11 @@ export const {
   theme: {
     colors: {
       background: colors.background,
-      blue: colors.blue,
-      dark: colors.dark,
-      grey: colors.grey,
-      orange: colors.orange,
+      primaryBlue: colors.blue,
+      primaryDark: colors.dark,
+      primaryGrey: colors.grey,
+      primaryOrange: colors.orange,
+      primaryWhite: colors.white,
     },
     fontWeights: {
       thin: fontWeight.thin,
@@ -31,6 +32,14 @@ export const {
       bold: fontWeight.bold,
       extraBold: fontWeight.extraBold,
       black: fontWeight.black,
+    },
+    fontSizes: {
+      verySmall: fontSize.verySmall,
+      small: fontSize.small,
+      medium: fontSize.medium,
+      large: fontSize.large,
+      veryLarge: fontSize.veryLarge,
+      hero: fontSize.hero,
     },
   },
 });
