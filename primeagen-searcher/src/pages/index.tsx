@@ -3,6 +3,7 @@ import Layout from "../components/layout/Layout";
 import { useProgrammerList } from "../hooks/useProgrammerList";
 import Card from "../components/common/Card";
 import { styled } from "@stitches/react";
+import { Link } from "gatsby";
 
 const IndexPage = () => {
   const programmersList = useProgrammerList();
@@ -10,7 +11,9 @@ const IndexPage = () => {
     <Layout>
       <ProgrammerWrapper>
         {programmersList.map((programmer) => (
-          <Card key={programmer.id} programmerData={programmer} />
+          <Link to={`/${programmer.url}`}>
+            <Card key={programmer.id} programmerData={programmer} />
+          </Link>
         ))}
       </ProgrammerWrapper>
     </Layout>
