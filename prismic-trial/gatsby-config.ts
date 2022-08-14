@@ -1,6 +1,5 @@
 import type { GatsbyConfig } from "gatsby";
 
-const linkResolver = require('./example-route-to-linkResolver')
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -34,7 +33,6 @@ const config: GatsbyConfig = {
         repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
         accessToken: process.env.PRISMIC_ACCESS_TOKEN,
         customTypesApiToken: process.env.PRISMIC_CUSTOM_TYPES_API_TOKEN,
-        linkResolver: (doc: unknown) => linkResolver(doc),
       },
     },
   ]
