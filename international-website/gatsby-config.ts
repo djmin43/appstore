@@ -22,10 +22,20 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: "gatsby-plugin-i18n",
+      resolve: `gatsby-plugin-react-i18next`,
       options: {
-        langKeyDefault: "en",
-        useLangKeyLayout: true,
+        languages: [`en`, `ko`],
+        defaultLanguage: `en`,
+        // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
+        // you can pass any i18next options
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false, // not needed for react as it escapes by default
+          },
+          keySeparator: false,
+          nsSeparator: false,
+        },
+        pages: [],
       },
     },
     "gatsby-plugin-image",
