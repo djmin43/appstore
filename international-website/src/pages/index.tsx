@@ -1,8 +1,14 @@
 import React from "react";
-const Index = () => {
+import Layout from "../components/Layout";
+
+const Index = ({ location }: any) => {
   const place = window.navigator.language;
   console.log(place);
-  return <div>hello world</div>;
+  return (
+    <Layout location={location} lang="ko">
+      <div>asdf</div>
+    </Layout>
+  );
 };
 
 export default Index;
