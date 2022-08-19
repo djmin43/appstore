@@ -26,6 +26,7 @@ const config: GatsbyConfig = {
       options: {
         langKeyDefault: "en",
         useLangKeyLayout: false,
+        prefixDefault: true,
       },
     },
     "gatsby-plugin-image",
