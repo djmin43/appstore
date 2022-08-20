@@ -6,7 +6,7 @@ interface ILayout {
 }
 
 const Layout = ({ children }: ILayout) => {
-  useRedirectLanguage();
+  // useRedirectLanguage();
 
   return <div>{children}</div>;
 };
