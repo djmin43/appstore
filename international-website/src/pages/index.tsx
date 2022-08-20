@@ -7,7 +7,7 @@ const Index = () => {
   console.log(t);
   return (
     <Layout>
-      <div>hello</div>
+      <div>{t("Welcome to React")}</div>
     </Layout>
   );
 };

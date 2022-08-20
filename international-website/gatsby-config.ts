@@ -37,13 +37,7 @@ const config: GatsbyConfig = {
       },
       __key: "images",
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/locales`,
-        name: `locale`,
-      },
-    },
+
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
