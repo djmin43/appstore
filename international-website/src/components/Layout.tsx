@@ -1,14 +1,13 @@
 import React from "react";
+import useRedirectLanguage from "../hooks/useRedirectLanguage";
 
 interface ILayout {
   children: JSX.Element;
-  location: any;
-  lang: string;
 }
 
-const Layout = ({ children, location, lang }: ILayout) => {
-  console.log("lang", lang);
-  console.log("location", location);
+const Layout = ({ children }: ILayout) => {
+  useRedirectLanguage();
+
   return <div>{children}</div>;
 };
 

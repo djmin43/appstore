@@ -1,11 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-const Index = ({ location }: any) => {
-  const place = window.navigator.language;
-  console.log(place);
+const Index = () => {
   return (
-    <Layout location={location} lang="ko">
+    <Layout>
       <div>asdf</div>
     </Layout>
   );
