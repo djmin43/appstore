@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { navigate } from "gatsby";
 
 const languageOptions: LanguageOptionTypes = {
-  en: "en-US",
-  ko: "ko-KR",
+  en: "en",
+  ko: "ko",
 };
 
 type LanguageOptionTypes = {
