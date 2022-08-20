@@ -15,13 +15,6 @@ const config: GatsbyConfig = {
 
   graphqlTypegen: true,
   plugins: [
-    // {
-    //   resolve: "gatsby-plugin-i18n",
-    //   options: {
-    //     langKeyDefault: "en",
-    //     useLangKeyLayout: false,
-    //   },
-    // },
     {
       resolve: "gatsby-source-contentful",
       options: {
