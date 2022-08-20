@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { navigate } from "gatsby";
 
 enum LanguageOptions {
@@ -6,7 +6,9 @@ enum LanguageOptions {
   KO = "ko",
 }
 
-const useRedirectLanguage = (): void => {
+const useRedirectLanguage = () => {
+  const [currentLang, setCurrentLang] = useState(LanguageOptions.EN);
+
   const getRedirectLanguage = () => {
     if (typeof navigator === `undefined`) {
       return LanguageOptions.EN;
@@ -24,6 +26,11 @@ const useRedirectLanguage = (): void => {
 
     navigate(`/${urlLang}/`, { replace: true });
   }, []);
+
+  return {
+    language: currentLang,
+    changeLanguage: setCurrentLang,
+  };
 };
 
 export default useRedirectLanguage;

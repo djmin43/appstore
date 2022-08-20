@@ -1,14 +1,16 @@
 import React from "react";
 import { Link, useI18next } from "gatsby-plugin-react-i18next";
+import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 
 const Index = () => {
   const { languages, changeLanguage, originalPath } = useI18next();
   console.log(navigator.language);
   console.log(originalPath);
+  console.log(languages);
 
   return (
-    <div>
+    <Layout>
       <ul className="languages">
         {languages.map((lng) => (
           <li key={lng}>
@@ -18,19 +20,22 @@ const Index = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </Layout>
   );
 };
 
 export const query = graphql`
-  query ($language: String!) {
-    allContentfulHarmonyMain(filter: { node_locale: { eq: $language } }) {
-      nodes {
-        id
-        node_locale
-        mainHeader
+  query LanguageQuery {
+    allLocale {
+      edges {
+        node {
+          id
+          ns
+          language
+        }
       }
     }
   }
 `;
+
 export default Index;
