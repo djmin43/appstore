@@ -6,6 +6,6 @@ i18next.use(initReactI18next).use(I18nextBrowserLanguageDetector).init({
   fallbackLng: "en",
 });
 
-i18next.languages = ["en-US", "ko-KR"];
+i18next.languages = ["en", "ko"];
 
 export default i18next;

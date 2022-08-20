@@ -21,7 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
   data.allContentfulHarmonyMain.edges.forEach((edge) => {
     actions.createPage({
       path: "/" + edge.node.node_locale,
-      component: path.resolve("./src/pages/index.tsx"),
+      component: path.resolve("./src/templates/Main.tsx"),
       context: {
         nodeLocale: edge.node.node_locale,
       },
