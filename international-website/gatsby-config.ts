@@ -37,7 +37,6 @@ const config: GatsbyConfig = {
       },
       __key: "images",
     },
-
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

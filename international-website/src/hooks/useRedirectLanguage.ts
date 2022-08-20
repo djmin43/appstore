@@ -11,17 +11,16 @@ type LanguageOptionTypes = {
 };
 
 const useRedirectLanguage = () => {
-  const [currentLang, setCurrentLang] = useState(languageOptions.en);
-
   const getRedirectLanguage = () => {
     if (typeof navigator === `undefined`) {
       return languageOptions.en;
     }
 
-    const lang: string = navigator.language.split("-")[0] as string;
+    const lang = navigator.language.split("-")[0];
 
     //fallback language
     if (!lang) return languageOptions.en;
+    console.log(lang);
 
     return languageOptions[lang];
   };
@@ -30,8 +29,6 @@ const useRedirectLanguage = () => {
     const urlLang = getRedirectLanguage();
     navigate(`/${urlLang}/`, { replace: true });
   }, []);
-
-  return currentLang;
 };
 
 export default useRedirectLanguage;
