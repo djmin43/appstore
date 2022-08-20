@@ -44,24 +44,6 @@ const config: GatsbyConfig = {
         name: `locale`,
       },
     },
-    {
-      resolve: "gatsby-plugin-react-i18next",
-      options: {
-        // localeJsonSourceName: `allLocale`,
-        localeJsonNodeName: `allLocale`,
-        defaultLanguage: `en`,
-        languages: [`en`, `ko`],
-        generateDefaultLanguagePage: true,
-        redirect: true,
-        i18nextOptions: {
-          // debug: true,
-          fallbackLng: "en",
-          interpolation: {
-            escapeValue: false, // not needed for react as it escapes by default
-          },
-        },
-      },
-    },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
