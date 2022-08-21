@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import Layout from "../components/Layout";
 
-const Main = (props) => {
+const Main = (props: any) => {
   console.log(props);
   const { t } = useTranslation();
 

@@ -1,6 +1,7 @@
 import React from "react";
 import "../i18n/config";
 import Navbar from "./Navbar";
+import "./layout.css";
 
 interface ILayout {
   children: JSX.Element;
@@ -8,10 +9,10 @@ interface ILayout {
 
 const Layout = ({ children }: ILayout) => {
   return (
-    <div>
+    <section>
       <Navbar />
       {children}
-    </div>
+    </section>
   );
 };
 

@@ -11,11 +11,17 @@ i18next
       en: {
         translation: {
           title: "harmony",
+          login: "Log in",
+          "pricing plan": "Pricing plan",
+          signup: "Sign up",
         },
       },
       ko: {
         translation: {
           title: "할머니",
+          login: "로그인",
+          "pricing plan": "요금제",
+          signup: "무료 회원가입",
         },
       },
     },

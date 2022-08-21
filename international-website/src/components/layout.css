@@ -1,0 +1,18 @@
+@import "../css/typography.css";
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nanum Square", "Nanum Gothic", serif;
+    font-weight: normal;
+    word-wrap: break-word;
+    font-kerning: normal;
+}
+
+button {
+    background: none;
+    padding: none;
+    border: none;
+}
+
+
