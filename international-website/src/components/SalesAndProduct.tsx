@@ -2,14 +2,11 @@ import React from "react";
 import { styled } from "../gatsby-plugin-stitches/config";
 import { ICardComponent } from "../queries/harmony.fragment";
 import { useTranslation } from "react-i18next";
+import Card from "./common/Card";
 
 interface ISalesAndProductProps {
   product: ICardComponent[];
   sales: ICardComponent[];
-}
-
-interface ICardContainerProps {
-  item: ICardComponent;
 }
 
 const SalesAndProduct = ({ product, sales }: ISalesAndProductProps) => {
@@ -21,34 +18,25 @@ const SalesAndProduct = ({ product, sales }: ISalesAndProductProps) => {
         <Header>{t("product header")}</Header>
         <Divider />
         <Description>{t("product description")}</Description>
-        <CardContainer>
+        <HStack>
           {product.map((item) => (
             <Card item={item} />
           ))}
-        </CardContainer>
+        </HStack>
       </Section>
       <Section>
         <Header>{t("sales header")}</Header>
         <Divider />
         <Description>{t("sales description")}</Description>
-        <CardContainer>
+        <HStack>
           {sales.map((item) => (
             <Card item={item} />
           ))}
-        </CardContainer>
+        </HStack>
       </Section>
     </SalesAndProductContainer>
   );
 };
-
-const Card = ({ item }: ICardContainerProps) => {
-  return <div>{item.title}</div>;
-};
-
-const CardContainer = styled("div", {
-  display: "flex",
-  justifyContent: "center",
-});
 
 const SalesAndProductContainer = styled("section", {
   backgroundColor: "$background",
@@ -81,6 +69,11 @@ const Divider = styled("div", {
   backgroundColor: "$darkGrey",
   width: "38px",
   height: "2px",
+});
+
+const HStack = styled("div", {
+  display: "flex",
+  justifyContent: "center",
 });
 
 export default SalesAndProduct;

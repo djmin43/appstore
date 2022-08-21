@@ -45,7 +45,7 @@ const Gradient = styled("div", {
   position: "absolute",
   inset: "0 0 0 0",
   background:
-    "linear-gradient(0deg, rgba(250,250,250,1) 0%, rgba(0,0,0,0.6250875350140056) 30%, rgba(0,2,34,0) 100%)",
+    "linear-gradient(0deg, rgba(250,250,250,1) 0%, rgba(0,0,0,0) 30%, rgba(0,2,34,0) 100%)",
 });
 
 export default Solution;
