@@ -8,20 +8,11 @@ const Main = (props) => {
   console.log(props);
   const { t } = useTranslation();
 
-  const { languages } = i18next;
-  console.log(languages);
   return (
     <Layout>
       <div>
         <h1> {props.data.contentfulHarmonyMain.mainTitle}</h1>
-        <div>{t("Welcome to React")}</div>
-        <ul className="languages">
-          {languages.map((lng) => (
-            <li key={lng}>
-              <Link to={`/${lng}`}>{lng}</Link>
-            </li>
-          ))}
-        </ul>
+        <div>{t("title")}</div>
       </div>
     </Layout>
   );

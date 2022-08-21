@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { navigate } from "gatsby";
+import i18next from "i18next";
 
 const languageOptions: LanguageOptionTypes = {
   en: "en",
@@ -20,13 +21,13 @@ const useRedirectLanguage = () => {
 
     //fallback language
     if (!lang) return languageOptions.en;
-    console.log(lang);
 
     return languageOptions[lang];
   };
 
   useEffect(() => {
     const urlLang = getRedirectLanguage();
+    i18next.changeLanguage(urlLang);
     navigate(`/${urlLang}/`, { replace: true });
   }, []);
 };
