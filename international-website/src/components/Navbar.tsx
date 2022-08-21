@@ -53,7 +53,9 @@ const NavContainer = styled("nav", {
   display: "flex",
   justifyContent: "space-around",
   alignItems: "center",
-  // padding: "0 ",
+  position: "sticky",
+  top: "0",
+  zIndex: "5",
 });
 
 const SignUpButton = styled("button", {

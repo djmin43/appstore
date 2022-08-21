@@ -14,6 +14,9 @@ i18next
           login: "Log in",
           "pricing plan": "Pricing plan",
           signup: "Sign up",
+          "only solution1":
+            "There is only one way to solve complex business problems with one account",
+          "only solution2": ".",
         },
       },
       ko: {
@@ -22,6 +25,9 @@ i18next
           login: "로그인",
           "pricing plan": "요금제",
           signup: "무료 회원가입",
+          "only solution1":
+            "단 하나의 계정으로 모든 비즈니스 고민을 해결하는 솔루션은 오직",
+          "only solution2": "뿐 입니다.",
         },
       },
     },

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Layout from "../components/Layout";
 import Landing from "../components/Landing";
 import { ILandingMain } from "../queries/harmony.fragment";
+import Solution from "../components/Solution";
 
 interface IMain {
   data: {
@@ -16,7 +17,10 @@ const Main = ({ data }: IMain) => {
 
   return (
     <Layout>
-      <Landing harmonyMain={data.contentfulHarmonyMain} />
+      <>
+        <Landing harmonyMain={data.contentfulHarmonyMain} />
+        <Solution />
+      </>
     </Layout>
   );
 };
