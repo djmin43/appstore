@@ -14,11 +14,13 @@ const Solution = () => {
           {t("only solution2")}
         </p>
       </SolutionHeaderContainer>
+      <Gradient />
     </SolutionContainer>
   );
 };
 
 const SolutionContainer = styled("section", {
+  position: "relative",
   height: "80vh",
   display: "flex",
   justifyContent: "center",
@@ -37,6 +39,13 @@ const SolutionHeaderContainer = styled("div", {
   ".highlight": {
     color: "$primaryLight",
   },
+});
+
+const Gradient = styled("div", {
+  position: "absolute",
+  inset: "0 0 0 0",
+  background:
+    "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0.6250875350140056) 30%, rgba(0,2,34,0) 100%)",
 });
 
 export default Solution;
