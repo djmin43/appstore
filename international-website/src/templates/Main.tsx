@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import Layout from "../components/Layout";
+import Landing from "../components/Landing";
 
 const Main = (props: any) => {
   console.log(props);
@@ -10,10 +11,7 @@ const Main = (props: any) => {
 
   return (
     <Layout>
-      <div>
-        <h1> {props.data.contentfulHarmonyMain.mainTitle}</h1>
-        <div>{t("title")}</div>
-      </div>
+      <Landing />
     </Layout>
   );
 };
