@@ -54,12 +54,12 @@ const CardContainer = styled("div", {
 const Title = styled("p", {
   color: "$grey",
   fontSize: "1.25rem",
-  margin: "0.25rem",
 });
 
 const Description = styled("p", {
   color: "$black",
   fontSize: "$small",
+  margin: "0.5rem",
 });
 
 export default Card;
