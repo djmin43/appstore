@@ -1,17 +1,22 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 import Layout from "../components/Layout";
 import Landing from "../components/Landing";
+import { ILandingMain } from "../queries/harmony.fragment";
 
-const Main = (props: any) => {
-  console.log(props);
+interface IMain {
+  data: {
+    contentfulHarmonyMain: ILandingMain;
+  };
+}
+const Main = ({ data }: IMain) => {
+  console.log(data);
   const { t } = useTranslation();
 
   return (
     <Layout>
-      <Landing />
+      <Landing harmonyMain={data.contentfulHarmonyMain} />
     </Layout>
   );
 };
@@ -19,10 +24,7 @@ const Main = (props: any) => {
 export const data = graphql`
   query MyQuery($nodeLocale: String!) {
     contentfulHarmonyMain(node_locale: { eq: $nodeLocale }) {
-      mainDescription
-      mainTitle
-      mainButtonLink
-      mainButton
+      ...LandingMain
     }
   }
 `;

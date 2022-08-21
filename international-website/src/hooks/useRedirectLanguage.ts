@@ -27,7 +27,6 @@ const useRedirectLanguage = () => {
 
   useEffect(() => {
     const urlLang = getRedirectLanguage();
-    i18next.changeLanguage(urlLang);
     navigate(`/${urlLang}/`, { replace: true });
   }, []);
 };
