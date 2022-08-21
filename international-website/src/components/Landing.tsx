@@ -4,10 +4,10 @@ import { StaticImage } from "gatsby-plugin-image";
 import { ILandingMain } from "../queries/harmony.fragment";
 
 interface ILanding {
-  harmonyMain: ILandingMain;
+  landingData: ILandingMain;
 }
 
-const Landing = ({ harmonyMain }: ILanding) => {
+const Landing = ({ landingData }: ILanding) => {
   return (
     <LandingContainer>
       <StaticImage
@@ -20,11 +20,11 @@ const Landing = ({ harmonyMain }: ILanding) => {
       <Gradient />
       <ContentContainer>
         <TextContainer>
-          <h1 className="main-title">{harmonyMain.mainTitle}</h1>
-          <p className="description">{harmonyMain.mainDescription}</p>
+          <h1 className="main-title">{landingData.mainTitle}</h1>
+          <p className="description">{landingData.mainDescription}</p>
         </TextContainer>
         <ButtonContainer>
-          <StartButton>{harmonyMain.mainButton}</StartButton>
+          <StartButton>{landingData.mainButton}</StartButton>
         </ButtonContainer>
       </ContentContainer>
     </LandingContainer>

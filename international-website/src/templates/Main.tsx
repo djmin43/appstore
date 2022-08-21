@@ -3,12 +3,19 @@ import { graphql } from "gatsby";
 import { useTranslation } from "react-i18next";
 import Layout from "../components/Layout";
 import Landing from "../components/Landing";
-import { ILandingMain } from "../queries/harmony.fragment";
+import { ICardComponent, ILandingMain } from "../queries/harmony.fragment";
 import Solution from "../components/Solution";
+import SalesAndProduct from "../components/SalesAndProduct";
 
 interface IMain {
   data: {
-    contentfulHarmonyMain: ILandingMain;
+    landingData: ILandingMain;
+    product: {
+      nodes: ICardComponent[];
+    };
+    sales: {
+      nodes: ICardComponent[];
+    };
   };
 }
 const Main = ({ data }: IMain) => {
@@ -18,17 +25,35 @@ const Main = ({ data }: IMain) => {
   return (
     <Layout>
       <>
-        <Landing harmonyMain={data.contentfulHarmonyMain} />
+        <Landing landingData={data.landingData} />
         <Solution />
+        <SalesAndProduct
+          product={data.product.nodes}
+          sales={data.sales.nodes}
+        />
       </>
     </Layout>
   );
 };
 
 export const data = graphql`
-  query MyQuery($nodeLocale: String!) {
-    contentfulHarmonyMain(node_locale: { eq: $nodeLocale }) {
+  query HarmonyQuery($nodeLocale: String!) {
+    landingData: contentfulHarmonyMain(node_locale: { eq: $nodeLocale }) {
       ...LandingMain
+    }
+    product: allContentfulHarmonyCardComponent(
+      filter: { node_locale: { eq: $nodeLocale }, type: { eq: "product" } }
+    ) {
+      nodes {
+        ...CardComponent
+      }
+    }
+    sales: allContentfulHarmonyCardComponent(
+      filter: { node_locale: { eq: $nodeLocale }, type: { eq: "sales" } }
+    ) {
+      nodes {
+        ...CardComponent
+      }
     }
   }
 `;

@@ -22,6 +22,8 @@ export const {
       lightGrey: colors.lightGrey,
       black: colors.black,
       dark: colors.dark,
+      background: colors.background,
+      darkGrey: colors.darkGrey,
     },
     fontWeights: {
       thin: fontWeight.thin,
