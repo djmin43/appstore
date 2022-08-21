@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { navigate } from "gatsby";
-import i18next from "i18next";
 
 const languageOptions: LanguageOptionTypes = {
   en: "en",

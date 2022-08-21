@@ -12,7 +12,9 @@
 
 button {
     background: none;
-    padding: none;
+    padding: 0;
     border: none;
+    cursor: default;
+
 }
 
