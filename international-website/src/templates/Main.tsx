@@ -43,6 +43,7 @@ export const data = graphql`
     }
     product: allContentfulHarmonyCardComponent(
       filter: { node_locale: { eq: $nodeLocale }, type: { eq: "product" } }
+      sort: { fields: step, order: ASC }
     ) {
       nodes {
         ...CardComponent
@@ -50,6 +51,7 @@ export const data = graphql`
     }
     sales: allContentfulHarmonyCardComponent(
       filter: { node_locale: { eq: $nodeLocale }, type: { eq: "sales" } }
+      sort: { fields: step, order: ASC }
     ) {
       nodes {
         ...CardComponent

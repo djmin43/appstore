@@ -21,8 +21,8 @@ const Card = ({ item }: ICardContainerProps) => {
       <Step>
         <span>{item.step}</span>
       </Step>
-      <p>{item.title}</p>
-      <p>{item.description}</p>
+      <Title>{item.title}</Title>
+      <Description>{item.description}</Description>
     </CardContainer>
   );
 };
@@ -46,9 +46,19 @@ const CardContainer = styled("div", {
   justifyContent: "flex-start",
   borderRadius: "4px",
   width: "268px",
-  padding: "0.5rem",
+  padding: "1rem",
   margin: "0.5rem",
   boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+});
+
+const Title = styled("p", {
+  color: "$grey",
+  fontSize: "1.25rem",
+});
+
+const Description = styled("p", {
+  color: "$black",
+  fontSize: "$small",
 });
 
 export default Card;

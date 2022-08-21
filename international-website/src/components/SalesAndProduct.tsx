@@ -41,6 +41,7 @@ const SalesAndProduct = ({ product, sales }: ISalesAndProductProps) => {
 const SalesAndProductContainer = styled("section", {
   backgroundColor: "$background",
   textAlign: "center",
+  padding: "10rem",
 });
 
 const Section = styled("div", {
