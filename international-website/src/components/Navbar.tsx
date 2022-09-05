@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
-import { Link, navigate } from "gatsby";
+import { navigate } from "gatsby";
 import { styled } from "../gatsby-plugin-stitches/config";
 import { StaticImage } from "gatsby-plugin-image";
 

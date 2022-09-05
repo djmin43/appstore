@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { useTranslation } from "react-i18next";
 import Layout from "../components/Layout";
 import Landing from "../components/Landing";
 import { ICardComponent, ILandingMain } from "../queries/harmony.fragment";
@@ -19,9 +18,6 @@ interface IMain {
   };
 }
 const Main = ({ data }: IMain) => {
-  console.log(data);
-  const { t } = useTranslation();
-
   return (
     <Layout>
       <>
