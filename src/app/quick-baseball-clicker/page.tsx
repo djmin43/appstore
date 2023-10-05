@@ -25,14 +25,7 @@ const QuickBaseballClickerPage = () => {
         <p>
           Tap the &apos;strike&apos; button to record a strike. Tap the
           &apos;ball&apos; button to log a ball. Tap the &apos;out&apos; button
-          to mark an out.
-        </p>
-        <br />
-        <p>
-          For resetting, just press and hold the white button. Should you have
-          any questions or wish to provide feedback on the app, reach out via
-          email at <a href="mailto:dj.min43@gmail.com">dj.min43@gmail.com</a>.
-          Enjoy umpiring with ease!
+          to mark an out. For resetting, just press and hold the white button.
         </p>
       </div>
       <br />
@@ -48,6 +41,18 @@ const QuickBaseballClickerPage = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
+      </div>
+      <br />
+
+      <div>
+        <h2>Support</h2>
+        <br />
+        <p>
+          Should you have any questions or wish to provide feedback on the app,
+          reach out via email at{" "}
+          <a href="mailto:dj.min43@gmail.com">dj.min43@gmail.com</a>. Enjoy
+          umpiring with ease!
+        </p>
       </div>
     </article>
   );
